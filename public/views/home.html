@@ -1,0 +1,26 @@
+<div style="padding:2%">
+    <div class="text-left"><a class="btn btn-primary" href="#/profile">Add Profile</a></div>
+    <table class="table table-stripped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Address</th>
+                <th>City</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="user in users" ng-click="editRow(user.id)">
+            <td>{{user.name}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.phone}}</td>
+            <td>{{user.street}}</td>
+            <td>{{user.city}}</td>
+            <td> <button type="button" class="btn btn-danger" ng-click="delete($index)">X</button> </td>
+                </tr>
+        </tbody>
+    </table>
+    
+</div>

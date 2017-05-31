@@ -1,0 +1,70 @@
+<div class="profile" style="width:60%; margin:2% auto;">
+    
+    
+    <form class="form-horizontal">
+<fieldset style="margin-left: -199px;">
+<legend>{{user.id? 'Edit Profile' : 'New Profile'}}</legend>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="name">Name</label>  
+  <div class="col-md-4">
+  <input id="name" name="name" type="text" ng-model="user.name"  placeholder="Enter your name" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="email">Email</label>  
+  <div class="col-md-4">
+  <input id="email" name="email" ng-model="user.email"  type="text" placeholder="Enter your email id" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="password">Password</label>
+  <div class="col-md-4">
+    <input id="password" name="password" ng-model="user.password"  type="password" placeholder="Enter a password" class="form-control input-md" required="">
+    
+  </div>
+</div>
+<div class="form-group">
+  <label class="col-md-4 control-label" for="contact">Phone#</label>  
+  <div class="col-md-4">
+  <input id="contact" name="contact" ng-model="user.phone"  type="text" placeholder="Enter your contact no." class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="street">Street</label>  
+  <div class="col-md-4">
+  <input id="street" name="street" ng-model="user.street"  type="text" placeholder="Enter your street" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="city">City</label>  
+  <div class="col-md-4">
+  <input id="city" name="city" ng-model="user.city"  type="text" placeholder="Enter your city" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="signup"></label>
+  <div class="col-md-4">
+    <button id="signup" name="Add" class="btn btn-success" ng-click='save()'>{{user.id? 'Update' : 'Add'}}</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+
+
+</div>

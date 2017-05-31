@@ -1,0 +1,27 @@
+{
+    "users":
+    [
+        {
+            "id" : "1",
+            "name" : "venky",
+            "email" : "venky@gmail.com",
+            "password" : "venky",
+            "phone" : "12345",
+            "street" : "hyd",
+            "area" : "hyd",
+            "city" : "hyd",
+            "district" : "hyd"
+        },
+        {
+            "id" : "2",
+            "name" : "chakri",
+            "email" : "chakri@gmail.com",
+            "password" : "123",
+            "phone" : "12345",
+            "street" : "hyd",
+            "area" : "hyd",
+            "city" : "hyd",
+            "district" : "hyd"
+        }
+    ]
+}
